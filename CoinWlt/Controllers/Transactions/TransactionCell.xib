@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionCell" id="B0x-rg-KnQ" customClass="TransactionCell" customModule="CoinWlt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B0x-rg-KnQ" id="vov-CR-GYk">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E74-Aa-1dv" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LT-Vi-DTw" userLabel="Action Label">
+                                <rect key="frame" x="15" y="10" width="46" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="435.48000000 XRP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ug-W9-Huv" userLabel="Balance Label">
+                                <rect key="frame" x="273" y="10" width="131" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUo-rT-taF" userLabel="Entry Type Label">
+                                <rect key="frame" x="15" y="29" width="389" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0LT-Vi-DTw" firstAttribute="leading" secondItem="E74-Aa-1dv" secondAttribute="leading" constant="15" id="AwZ-HZ-aYl"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ug-W9-Huv" secondAttribute="trailing" constant="10" id="Lmv-rA-qct"/>
+                            <constraint firstItem="0LT-Vi-DTw" firstAttribute="top" secondItem="E74-Aa-1dv" secondAttribute="top" constant="10" id="Qey-dS-fSH"/>
+                            <constraint firstItem="OUo-rT-taF" firstAttribute="top" secondItem="0LT-Vi-DTw" secondAttribute="bottom" id="W8H-g0-xc1"/>
+                            <constraint firstItem="OUo-rT-taF" firstAttribute="leading" secondItem="0LT-Vi-DTw" secondAttribute="leading" id="ZUI-oG-ggB"/>
+                            <constraint firstItem="3Ug-W9-Huv" firstAttribute="trailing" secondItem="OUo-rT-taF" secondAttribute="trailing" id="nik-6C-fK6"/>
+                            <constraint firstItem="3Ug-W9-Huv" firstAttribute="top" secondItem="0LT-Vi-DTw" secondAttribute="top" id="vii-2x-whh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E74-Aa-1dv" firstAttribute="top" secondItem="vov-CR-GYk" secondAttribute="top" id="Rrh-XK-fsO"/>
+                    <constraint firstAttribute="bottom" secondItem="E74-Aa-1dv" secondAttribute="bottom" id="SV0-2s-s0i"/>
+                    <constraint firstAttribute="trailing" secondItem="E74-Aa-1dv" secondAttribute="trailing" id="da2-Yx-mmi"/>
+                    <constraint firstItem="E74-Aa-1dv" firstAttribute="leading" secondItem="vov-CR-GYk" secondAttribute="leading" id="vg3-82-LSE"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="actionLabel" destination="0LT-Vi-DTw" id="pcn-nw-RY1"/>
+                <outlet property="actionStr" destination="OUo-rT-taF" id="QV9-bH-cbi"/>
+                <outlet property="balanceLabel" destination="3Ug-W9-Huv" id="Ujh-qS-O5H"/>
+            </connections>
+            <point key="canvasLocation" x="-562.31884057971024" y="-61.607142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

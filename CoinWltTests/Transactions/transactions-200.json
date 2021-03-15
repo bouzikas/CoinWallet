@@ -1,0 +1,27 @@
+{
+    "histories" : [
+        {
+            "id": "2001",
+            "entry": "incoming",
+            "amount": "100.23",
+            "currency": "PHP",
+            "sender": "John",
+            "recipient": "You"
+        },
+        {
+            "id": "2000",
+            "entry": "outgoing",
+            "amount": "10.10",
+            "currency": "USD",
+            "sender": "You",
+            "recipient": "7-11"
+        },
+        {
+            "id": "1999",
+            "entry": "incoming",
+            "amount": "0.000000000000000105", "currency": "ETH",
+            "sender": "Keith",
+            "recipient": "You"
+        }
+    ]
+}

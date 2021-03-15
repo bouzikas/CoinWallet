@@ -1,0 +1,11 @@
+{
+    "wallets": [
+        {
+            "id": "1001", "wallet_name": "PHP", "balance": "1000.23"
+        }, {
+            "id": "1002", "wallet_name": "USD", "balance": "100.10"
+        }, {
+            "id": "1003", "wallet_name": "ETH", "balance": "0.000000000000010026"
+        }
+    ]
+}

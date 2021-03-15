@@ -1,0 +1,8 @@
+{
+    "errors": {
+        "non_field_errors": {
+            "code": "throttled",
+            "message": "Request has been throttled"
+        }
+    }
+}
